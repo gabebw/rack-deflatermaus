@@ -1,16 +1,18 @@
-require "rack/deflatermaus/version"
+require "rack/deflater"
+
 require "rack/deflatermaus/player"
+require "rack/deflatermaus/version"
 
 module Rack
   class Deflatermaus
     def initialize(app)
-      @app = app
+      @deflater = Deflater.new(app)
     end
 
     def call(env)
       Player.new.play
 
-      @app.call(env)
+      @deflater.call(env)
     end
   end
 end

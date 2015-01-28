@@ -32,7 +32,10 @@ Or install it yourself as:
 
 ## Usage
 
-`Rack::Deflatermaus` is a standard Rack middleware.
+`Rack::Deflatermaus` is a drop-in replacement for [`Rack::Deflater`]. You can
+use it anywhere you'd use `Rack::Deflater`.
+
+[`Rack::Deflater`]: http://robots.thoughtbot.com/content-compression-with-rack-deflater
 
 In Rails:
 
