@@ -50,7 +50,7 @@ In any Rack application:
 use Rack::Deflatermaus
 ```
 
-Restart your application, and load a page, any page.
+Restart your application and load a page, any page.
 
 ## I want to use this with Rack::Timeout, how long does the music play for?
 
