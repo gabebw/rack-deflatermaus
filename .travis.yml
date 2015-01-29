@@ -1,0 +1,17 @@
+language:
+  - ruby
+rvm:
+  - 2.0.0
+  - 2.1.5
+  - 2.2.0
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install libjack0 libjack-dev
+  - sudo apt-get install libportaudiocpp0 portaudio19-dev libmpg123-dev
+branches:
+  only:
+    - master
+cache:
+  - bundler
+notifications:
+  email: false
