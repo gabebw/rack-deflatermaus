@@ -1,10 +1,11 @@
 # Rack::Deflatermaus
 
-Play a selection from the operetta *[Die Fledermaus][wiki]* on every request to
-a Rack app.
+A drop-in replacement for [`Rack::Deflater`] that plays a selection from the
+operetta *[Die Fledermaus][wiki]* on every request.
 
 This may slow down your application significantly.
 
+[`Rack::Deflater`]: http://robots.thoughtbot.com/content-compression-with-rack-deflater
 [wiki]: https://en.wikipedia.org/wiki/Die_Fledermaus
 
 ## Installation
@@ -34,8 +35,6 @@ Or install it yourself as:
 
 `Rack::Deflatermaus` is a drop-in replacement for [`Rack::Deflater`]. You can
 use it anywhere you'd use `Rack::Deflater`.
-
-[`Rack::Deflater`]: http://robots.thoughtbot.com/content-compression-with-rack-deflater
 
 In Rails:
 
