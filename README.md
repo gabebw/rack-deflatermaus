@@ -1,7 +1,7 @@
 # Rack::Deflatermaus
 
 A drop-in replacement for [`Rack::Deflater`] that plays a selection from the
-operetta *[Die Fledermaus][wiki]* on every request.
+operetta *[Die Fledermaus][wiki]* on your server before every request.
 
 This may slow down your application significantly.
 
